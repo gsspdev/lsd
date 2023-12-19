@@ -5,24 +5,24 @@
     clippy::cast_possible_wrap
 )]
 
-extern crate chrono;
-extern crate chrono_humanize;
-extern crate clap;
-extern crate dirs;
-extern crate libc;
-extern crate lscolors;
+extern crate chrono; // date & time for rust
+extern crate chrono_humanize; // human language chrono
+extern crate clap; // command line argument parser
+extern crate dirs; // XDG, Standard Directories, Known Folder
+extern crate libc; // Raw FFI bindings to platforms' system libraries
+extern crate lscolors; // Library for colorizing paths according to LS_COLORS env variable
 #[cfg(test)]
-extern crate tempfile;
-extern crate term_grid;
-extern crate terminal_size;
-extern crate unicode_width;
-extern crate url;
-extern crate wild;
-extern crate xdg;
-extern crate yaml_rust;
+extern crate tempfile; // OS-managed tempfiles
+extern crate term_grid; // arranges textual data in grid
+extern crate terminal_size; // simple utility for getting term size
+extern crate unicode_width; // determine displayed with of char and str types
+extern crate url; // implementation of the url standard w/ parse functions
+extern crate wild; // emulates glob wildcard expansion on windows
+extern crate xdg; // allows xdg directory lookup
+extern crate yaml_rust; // yaml 1.2 implementation in pure rust
 
 #[cfg(unix)]
-extern crate users;
+extern crate users; // lib for getting unix user & group info
 
 #[cfg(windows)]
 extern crate windows;
